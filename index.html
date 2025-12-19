@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZIKORA CHUKS-NWOSU</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <script src="scripts/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-title">ZIKORA CHUKS-NWOSU'S PORTFOLIO</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Info</a></li>
+            </ul>
+        </nav>
+        <a href="mailto:zikoramadin@gmail.com" class="contact-btn">Say Hello</a>
+    </header>
+
+    
+
+   <section id="home">
+       <div class="home-content p">
+           <p style="text-align: justify;">
+            Hi, I am Zikora. I am a developer exploring digital immersion and intelligence. I am focused on building at the intersection of <strong><span style="color: #4279b0;">MACHINE LEARNING</span></strong>, <strong><span style="color: #4279b0;">DATA SCIENCE</span></strong>, and <strong><span style="color: #4279b0;">GAME DEVELOPMENT</span></strong>, with a strong interest in applied Artificial Intelligence across education, healthcare, and entertainment. Building on a solid foundation in Data Science and Analytics, I apply methods and techniques in Machine Learning and Natural Language Processing alongside skills in Python and R statistical programming, SQL database management, and data visualization with tools like Pandas, to display insightful patterns and predictions that make a difference. My portfolio reflects my commitment to creating solutions; a by-product of my desire to leave the world a better place than I met it. Explore the rest of my portfolio to see how I apply my passion to create real-world solutions, and feel free to connect with me to delve into anything I have mentioned that resonates with you.
+           </p>
+       </div>
+       <div class="resume-content" id="resume">
+           <a href="https://drive.google.com/file/d/1dMaLYkzJ3MouW7m6vSlsHVzfvFjJTEA3/view?usp=sharing" target="_blank" class="resume-btn">View Resume</a>
+           <p>Click the button above to view my resume.</p>
+       </div>
+   </section>
+    
+    
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="filter-container">
+            <label for="skill-filter">Filter by Skill:</label>
+            <select id="skill-select">
+                <option value="all">View All</option>
+                <option value="ai">AI/Machine Learning</option>
+                <option value="c-sharp">C#</option>
+                <option value="game-dev">Game Development</option>
+                <option value="data-cleaning">Data Cleaning</option>
+                <option value="data-visualization">Data Visualization</option>
+                <option value="nlp">NLP</option>
+                <option value="python">Python</option>
+                <option value="sql">SQL</option>
+                <option value="unity">Unity Game Engine</option> 
+            </select>
+        </div>
+        <div class="projects-container">
+            <!-- Project 1: Online Learning Platform integrated with Automated Subjective Answer Grading -->
+            <div class="project" data-skills="python nlp ai sql data-cleaning">
+                <img src="images/AEG.png" alt="Project Image">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://colab.research.google.com/drive/16IbnmKSP4_1ZTbc8nfQyIN2AxlBA5zfD?usp=sharing" target="_blank">
+                            Online Learning Platform integrated with Automated Subjective Answer Grading
+                        </a>
+                    </h3>
+                    <p>
+                        This project served as my undergraduate thesis and was undertaken to investigate the limits of Machine Learning and Natural Language Processing in evaluating non-objective human input. It integrates the automated grading system into a demo online learning platform, with test questions and instructor-provided answers which the grading system compares against the "student"-provided input.
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> Python, MySQL, Jupyter Notebook, React, Git version control.<br>
+                        • <strong>Core Functionality:</strong> The platform employs AI and NLP techniques, such as text classification with LinearSVC, semantic similarity using BERT model, document embedding using Doc2Vec, data preprocessing, tokenization, feature extraction, data cleaning, and visualization.<br>
+                        • <strong>Evaluation Metrics:</strong> Precision, recall, and F1-score to assess model performance.<br>
+                        • <strong>User Interaction:</strong> Instructors can create courses, create tests, set test questions and the expected correct answer. Students can view the course catalogue and enroll in courses, view their tests and answer the questions.
+                    </p>
+                    <p>
+                        <strong>Results:</strong> The project made strides towards bridging the gap in advanced subjective evaluation on online learning platforms.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project" data-skills="python ai data-cleaning data-visualization">
+                <img src="images/dog_image_classifier.png" alt="Dog Image Classifier">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://github.com/theKorax/DogImageClassifier" target="_blank">
+                            Dog Image Classifier
+                        </a>
+                    </h3>
+                    <p>
+                        Completed a project that builds an end-to-end deep learning multiclass image classifier to accurately identify the breed of a dog in a given image.
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> Jupyter Notebook, Python, pandas, TensorFlow, mobilenetv2 model, Git version control.<br>
+                        • <strong>Core Functionality:</strong> Processed and analyzed unstructured visual data from kaggle's dog breed identification competition dataset to predict the breed of a dog. Utilized pandas for data manipulation and visualization<br>
+                        • <strong>Communication:</strong> Documented and presented findings in a structured Jupyter Notebook markdown format, detailing the model's functionality and its pipeline process.<br>
+                    </p>
+                    <p>
+                        <strong>Results:</strong> Developed a model that accurately identifies to a high degree of accuracy, the breed of a dog in a given image.
+                    </p>
+                </div>
+            </div>
+
+            
+
+
+
+            
+            <div class="project" data-skills="c-sharp game-dev unity">
+                <img src="images/alchemy.png" alt="Alchemy Adventure">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://thekorax.itch.io/alchemy-adventure" target="_blank">
+                            Alchemy Adventure
+                        </a>
+                    </h3>
+                    <p>
+                        A 2D platformer built with Unity, where players take on the role of a scientist solving math and science equations to progress through levels while facing AI-controlled enemies. Designed as an educational yet entertaining experience, the game was developed as a demo featuring two playable levels. It was created by Zikora Chuks-Nwosu and Oluwasegun Tobi as the final project for the GameUp Africa bootcamp, blending learning with engaging gameplay. 
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> C#, Unity, Git version control.<br>
+                        • <strong>Core Functionality:</strong> Enemy AI interaction, 2D platforming movement, Level progression system, Math and science equation challenges, Problem validation system<br>
+                    </p>
+                    <p>
+                        <strong>Results:</strong> Gained hands-on experience in the full game development pipeline process, from gameplay programming, to asset creation and animation, to level design and audio engineering, and finally creating the mobile version for android devices.
+                    </p>
+                </div>
+            </div>
+            
+            <div class="project" data-skills="c-sharp unity game-dev">
+                <img src="images/sabo.png" alt="Sabo game">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://thekorax.itch.io/sabo" target="_blank">
+                            Sabo Game
+                        </a>
+                    </h3>
+                    <p>
+                        Developed an African-centered turn-based card battle game using C# and the Unity game engine during my internship at Leti Arts, inspired by the Uno and Whot card games.
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> C#, Unity, Git version control.<br>
+                        • <strong>Core Functionality:</strong> I worked on the game design and core gameplay mechanics such as the action card system with unique abilities for each action card, local multiplayer system, card-draw system, and the shuffle system.<br>
+                    </p>
+                    <p>
+                        <strong>Results:</strong> The simulation demonstrated expertise in translating a complex game design into functioning and engaging gameplay mechanics interacting with other complex systems simultaneously.
+                    </p>
+                </div>
+            </div>
+
+    
+            <div class="project" data-skills="c-sharp unity game-dev">
+                <img src="images/word_flip.png" alt="Word Flip">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://thekorax.itch.io/word-flip">
+                            Word Flip Game 
+                        </a>
+                    </h3>
+                    <p>
+                        A word association game where players begin a word by starting it with the last letter of the previous word. The game takes some inspiration from freestyle games such as "Pick up and kill it" on the popular MTV show, which pushes players to think fast on their feet, and type even faster.
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> C#, Unity.<br>
+                        • <strong>Core Functionality:</strong> I used the official Scrabble English words dataset. I worked on the search algorithm to retrieve the player input from the dataset if the word exists and implemented data structures to keep track of all valid words provided in the current game round.<br>
+                    </p>
+                    <p>
+                        <strong>Results:</strong> Delivered a comprehensive, web-based casual game that built on core aspects of computer science.
+                    </p>
+                </div>
+            </div>
+            <div class="project" data-skills="python ai">
+                <img src="images/loan.jpg" alt="Loan Repayment App Model" style="width: 250px; height: auto;">
+                <div class="project-description">
+                    <h3>
+                        <a href="https://github.com/theKorax/LoanRepaymentApp" target="_blank">
+                            Loan Repayment App Model
+                        </a>
+                    </h3>
+                    <p>
+                        This project aims to develop a loan repayment calculator app to model a real life loan system, including compounding interest rates, flexible repayment structures, bank(borrower) statistics and predictions of the earnings of x months ahead.
+                    </p>
+                    <p>
+                        • <strong>Languages & Tools:</strong> Python, Jupyter Notebook, Scikit-Learn, Git version control.<br>
+                        • <strong>Core Functionality:</strong> Add a user, request a loan, make payment, Show company's statistics (using a linear regression model)<br>
+                        • <strong>User Interaction:</strong> Users can input data choices through a text-based interface and model how a real life loan repayment system would function.
+                    </p>
+                    <p>
+                        <strong>Results:</strong> The system accurately models loan repayment, and goes some way towards making predictions of the earnings of x months ahead.
+                    </p>
+                </div>
+            </div>
+    
+            
+        </div>
+    </section>
+
+    <section id="work-experience">
+        <h2>Work Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/SCIDaR.png" alt="SCIDaR Logo" class="timeline-icon">
+                    <h3>Solina Center for International Development and Rsearch (SCIDaR)</h3>
+                    <p><strong>Program Analyst Intern</strong>, May 2025 – Present</p>    
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/leti_arts.jpg" alt="Leti Arts Logo" class="timeline-icon">
+                    <h3>Leti Arts</h3>
+                    <p><strong>Gameplay Programmer Intern</strong>, December 2024 – May 2025</p>    
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <img src="images/bpe.jpg" alt="BPE Logo" class="timeline-icon">
+                    <h3>Bureau of Public Enterprises (BPE)</h3>
+                    <p><strong>Information Technology Intern</strong>, March 2023 – September 2023</p>    
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <section id="contact">
+        <h2>Info</h2>
+        <p>Feel free to reach out to me on my social media platforms!</p>
+        <p>Phone: +234-901-400-2509</p>
+        <p>Email: <a href="mailto:zikoramadin@gmail.com">zikoramadin@gmail.com</a></p>
+        
+        <div class="social-icons">
+            <a href="https://x.com/ChuksZikora" target="_blank">
+                <img src="images/x_twitter_image.jpg" alt="Twitter">
+            </a>
+            <a href="https://www.instagram.com/z.i.kora/" target="_blank">
+                <img src="images/instagram_image.jpg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/zikora-chuks-nwosu/" target="_blank">
+                <img src="images/linkedin_image.jpg" alt="LinkedIn">
+            </a>
+            <a href="https://github.com/theKorax" target="_blank">
+                <img src="images/github_image.jpg" alt="GitHub">
+            </a>
+        </div>
+    </section>
+</body>
+</html>
